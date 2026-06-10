@@ -160,7 +160,7 @@ class AppController
     private function login(): void
     {
         if ($this->estaAutenticado()) {
-            $this->redirect('dashboard');
+            $this->redirect('login');
         }
 
         require APP_PATH . '/views/login.php';
