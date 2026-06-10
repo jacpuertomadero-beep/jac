@@ -25,7 +25,7 @@ class AppController
     public function dispatch(): void
     {
         try {
-            $ruta = $_GET['ruta'] ?? 'dashboard';
+            $ruta = $_GET['ruta'] ?? 'login';
 
             switch ($ruta) {
                 case 'login':
