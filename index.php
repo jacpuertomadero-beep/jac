@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 echo password_hash('admin123', PASSWORD_DEFAULT);
 exit;
-declare(strict_types=1);
 
 session_start();
 
