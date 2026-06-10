@@ -14,6 +14,4 @@ define('DB_NAME', 'jac');
 define('DB_USER', 'postgres');
 define('DB_PASS', 'root');
 
-$scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '/'));
-$basePath = rtrim($scriptDir, '/');
-define('BASE_URL', ($basePath === '' || $basePath === '.') ? '/' : $basePath . '/');
+define('BASE_URL', '/');
