@@ -1,0 +1,153 @@
+:root {
+    --jac-accent: #0f766e;
+    --jac-accent-dark: #115e59;
+    --jac-surface: #ffffff;
+    --jac-border: #d8dee7;
+}
+
+body {
+    letter-spacing: 0;
+}
+
+.login-page {
+    min-height: 100vh;
+}
+
+.login-box {
+    width: min(92vw, 390px);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background-color: var(--jac-accent);
+    border-color: var(--jac-accent);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--jac-accent-dark);
+    border-color: var(--jac-accent-dark);
+}
+
+.nav-sidebar .nav-link.active {
+    background: var(--jac-accent);
+}
+
+.content-band,
+.tool-panel {
+    width: 100%;
+    background: var(--jac-surface);
+    border: 1px solid var(--jac-border);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.content-band h2,
+.tool-panel h2 {
+    font-size: 1.1rem;
+    margin: 0 0 .25rem;
+}
+
+.tool-panel__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-action {
+    min-height: 90px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.table-shell {
+    border: 1px solid var(--jac-border);
+    border-radius: 8px;
+}
+
+.table th {
+    font-size: .78rem;
+    text-transform: uppercase;
+    color: #5d6878;
+    background: #f6f8fb;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.table .col-fecha-afiliacion {
+    width: 145px;
+    min-width: 145px;
+    max-width: 145px;
+    white-space: nowrap;
+}
+
+.row-actions {
+    display: inline-flex;
+    gap: .35rem;
+}
+
+.row-actions .btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+}
+
+.participacion-cell {
+    min-width: 120px;
+}
+
+.participacion-cell .progress {
+    height: 6px;
+    margin-bottom: 0;
+}
+
+.organizacion-bloques .card-title {
+    font-size: .95rem;
+    margin: 0;
+}
+
+.organizacion-bloques .form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+.select2-container--bootstrap4 .select2-selection {
+    min-height: 38px;
+}
+
+@media (max-width: 575.98px) {
+    .tool-panel {
+        padding: .85rem;
+    }
+
+    .tool-panel__header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .tool-panel__header .btn {
+        width: 100%;
+    }
+
+    .form-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
