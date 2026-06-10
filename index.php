@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-echo password_hash('admin123', PASSWORD_DEFAULT);
-exit;
-
 session_start();
 
 require_once __DIR__ . '/config/config.php';
